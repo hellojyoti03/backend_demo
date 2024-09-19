@@ -1,8 +1,11 @@
 const express = require('express');
 const axios = require('axios');
+const cors = require("cors");
+
 const app = express();
 
 app.use(express.json());
+app.use(cors());
 
 // WhatsApp API credentials
 const phoneNumberId = '436620666197107';

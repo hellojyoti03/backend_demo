@@ -18,7 +18,7 @@ const password = 'g94mOW2A6vHpRmdX';
 // const TOKEN = 'EAAR9WBG5XZB8BO3ZCqKCNqoHNZCBNZCiOvamQtpMzTID46tHvdyFx4GCuRMZB4h8V2NbkkLBaCqSKng4UhMkdH4R66iNdyDV8CgPn3KeZBXpnfXlxSviSuZC4T49iXC0IijcpX6qcjFJVTdeti4o5p8sxBRA2t9ghNnvpVSwxehjRpJLsDIXH9tGJe6cp3G2cb7I6XMtLbnw3Ft1rNNYLAJav8CoisZD'; // Your access token
 app.post('/send-message', async (req, res) => {
   const { phoneNumber, message } = req.body;
-
+console.log(req.body, "GET REQU BODY")
   const messageData = {
     "messaging_product": "whatsapp",
     

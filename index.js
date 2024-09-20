@@ -73,18 +73,16 @@ app.post('/send-message', async (req, res) => {
       // } catch (error) {
       //   console.error(error);
     // }
-    function removePlusSign(phoneNumber) {
-      return phoneNumber.replace('+', '');
-  }
+    
     const data = {
       from: '14157386102',
-      to: removePlusSign(phoneNumber),
+      to: phoneNumber ,
       message_type: 'text',
       text: message,
       channel: 'whatsapp'
   };
   
-
+console.log(data, "GET FROM FRONT")
     axios.post(url, data, {
       auth: {
           username: username,

@@ -2,11 +2,12 @@ const express = require('express');
 const twilio = require('twilio');
 const bodyParser = require('body-parser');
 const axios = require('axios')
+const cors = require('cors')
 const app = express();
 const port = process.env.PORT || 3090;
 
 app.use(bodyParser.json());
-
+app.use(cors({origin: '*'}))
 const url = 'https://messages-sandbox.nexmo.com/v1/messages';
 const username = '72a1929f';
 const password = 'g94mOW2A6vHpRmdX';

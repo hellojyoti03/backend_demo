@@ -9,8 +9,7 @@ app.use(cors());
 
 // WhatsApp API credentials
 const phoneNumberId = '436620666197107';
-const accessToken = 'EAAR9WBG5XZB8BOzQddmh4hLv5SAdrV7pAw0LOjZC4YsozrKD70SA6btVRZBfOtZBaFv24YH9kik7RM9PQXW4ZCP43JYvekxUYvZAtTO1HYQZAxUopZAkZBqfWXZA7WAKKhTnBUTB1RZAZC8w8T1rrWTILeGtuC9nL3XyaxBVkrplugp1aZChjJJpcY5V5me8ZBhJ9o4kW3J7WrT58qSNKjKEZB5TMhPYoTNrsgZD';
-
+const accessToken = 'EAAR9WBG5XZB8BOwxg3H9kcBVVfy8iLoamVKRHtgz5jywZCRXqmaFlfK85GaYPYQ1fnelZAZCeMvwZAASEXNFWZAXqvCLFnwpBaZCmhZCtOxS6mJrmYgFNKhVZAbrmnNZBaZCxHErnYQDtYc664ZBSWZAYAAdlD66h8KH69WKQDjWBaauKWtAhAuLg56xhJBZAK'
 // API to send image via URL
 app.post('/send-image', async (req, res) => {
     const { recipientPhoneNumber, imageUrl, caption } = req.body;
